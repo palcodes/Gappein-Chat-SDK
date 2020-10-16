@@ -24,6 +24,7 @@ class ChatClientImpl(
         onError: (Exception) -> Unit
     ) {
         currentUser = user
+
         dbManager.createUser(user, {
             onSuccess(it)
         }, {
